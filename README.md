@@ -1,2 +1,2 @@
 # davidson00000.github.io
-This is my first web site! Hello world!
+葵、これがお父ちゃんの最初のホームページだぜ！　
