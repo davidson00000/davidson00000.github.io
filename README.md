@@ -1,3 +1,2 @@
 # 勉強の記録
-2022年5月
-[link text](study_log_2205.md)
+[2022年5月](study_log_2205.md)
