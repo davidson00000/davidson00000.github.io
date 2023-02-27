@@ -1,25 +1,75 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>ポートフォリオサイト</title>
-  </head>
-  <body>
-    <nav>
-      <ul>
-        <li><a href="/">ホーム</a></li>
-        <li><a href="/projects">プロジェクト</a></li>
-        <li><a href="/blog">ブログ</a></li>
-        <li><a href="/contact">連絡先</a></li>
-      </ul>
-    </nav>
-    <main>
-      <h1>ようこそ！</h1>
-      <p>私のポートフォリオサイトへようこそ。</p>
-      <p>私は○○と申します。このサイトでは私の仕事について紹介しています。</p>
-      <p>お気軽にご覧ください。</p>
-    </main>
-    <footer>
-      <p>&copy; 2023 ○○ All rights reserved.</p>
-    </footer>
-  </body>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>My Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#works">Works</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section id="about">
+      <div class="container">
+        <h2>About Me</h2>
+        <p>ここに自己紹介文を書く。</p>
+      </div>
+    </section>
+    <section id="skills">
+      <div class="container">
+        <h2>My Skills</h2>
+        <ul>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>PHP</li>
+          <li>MySQL</li>
+        </ul>
+      </div>
+    </section>
+    <section id="works">
+      <div class="container">
+        <h2>My Works</h2>
+        <ul>
+          <li><a href="#">Webアプリケーション1</a></li>
+          <li><a href="#">Webアプリケーション2</a></li>
+          <li><a href="#">Webアプリケーション3</a></li>
+        </ul>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form action="#">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <div>
+            <button type="submit">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+</body>
 </html>
