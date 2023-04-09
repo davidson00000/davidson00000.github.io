@@ -1,27 +1,176 @@
-/* Reset CSS */
+/* リセットCSS */
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ヘッダー */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.logo {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-nav li {
+  margin-left: 30px;
+}
+
+.main-nav li:first-child {
+  margin-left: 0;
+}
+
+.main-nav a {
+  font-size: 18px;
+  font-weight: bold;
+  color: #666;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.main-nav a:hover {
+  color: #333;
+}
+
+/* メインビジュアル */
+.main-visual {
+  height: 500px;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  height: 100%;
+  width: 400%;
+  display: flex;
+  animation: slide 12s infinite;
+}
+
+.slider img {
+  width: 25%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@keyframes slide {
+  0% {
+    transform: translateX(0%);
   }
-  
-  /* Global styles */
-  body {
-    font-family: Arial, sans-serif;
+  20% {
+    transform: translateX(0%);
   }
-  
-  .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+  25% {
+    transform: translateX(-100%);
   }
-  
-  /* Header */
-  header {
-    background-color: #333;
-    color: #fff;
+  45% {
+    transform: translateX(-100%);
   }
-  
-  header h1 {
-    font-size: 2.5rem;
-    margin: 20px
+  50% {
+    transform: translateX(-200%);
+  }
+  70% {
+    transform: translateX(-200%);
+  }
+  75% {
+    transform: translateX(-300%);
+  }
+  95% {
+    transform: translateX(-300%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+/* チャンネル紹介 */
+.channel {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 50px;
+  background-color: #f7f7f7;
+}
+
+.channel-item {
+  width: 30%;
+  margin-bottom: 50px;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.channel-item h2 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.channel-item img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.channel-item p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.channel-item a {
+  display: inline-block;
+padding: 10px 20px;
+border-radius: 5px;
+background-color: #333;
+color: #fff;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+.channel-item a:hover {
+background-color: #666;
+}
+
+/* フッター */
+footer {
+padding: 20px 50px;
+background-color: #f7f7f7;
+text-align: center;
+font-size: 14px;
+color: #666;
+margin-top: 50px;
+}
+
+footer p {
+margin-bottom: 10px;
+}
+
+footer a {
+color: #666;
+text-decoration: none;
+transition: all 0.3s ease;
+}
+
+footer a:hover {
+color: #333;
+}
+ 
