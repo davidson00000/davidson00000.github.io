@@ -1,75 +1,48 @@
 <!DOCTYPE html>
-<html lang="ja">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <h1>My Portfolio</h1>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Webサイト名 - トップページ</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1 class="logo">Webサイト名</h1>
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#works">Works</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="main-nav">
+          <li><a href="#bike-channel">バイクチャンネル</a></li>
+          <li><a href="#outdoor-channel">外遊びチャンネル</a></li>
+          <li><a href="#diy-channel">モノづくりチャンネル</a></li>
+          <li><a href="#study-channel">勉強中チャンネル</a></li>
         </ul>
       </nav>
-    </div>
-  </header>
-  <main>
-    <section id="about">
-      <div class="container">
-        <h2>About Me</h2>
-        <p>ここに自己紹介文を書く。</p>
+    </header>
+
+    <section class="main-visual">
+      <div class="slider">
+        <img src="images/bike.jpg" alt="バイクチャンネル">
+        <img src="images/outdoor.jpg" alt="外遊びチャンネル">
+        <img src="images/diy.jpg" alt="モノづくりチャンネル">
+        <img src="images/study.jpg" alt="勉強中チャンネル">
       </div>
     </section>
-    <section id="skills">
-      <div class="container">
-        <h2>My Skills</h2>
-        <ul>
-          <li>HTML/CSS</li>
-          <li>JavaScript</li>
-          <li>PHP</li>
-          <li>MySQL</li>
-        </ul>
+
+    <section class="channel">
+      <div class="channel-item">
+        <h2 id="bike-channel">バイクチャンネル</h2>
+        <img src="images/bike-channel.jpg" alt="バイクチャンネルのアイキャッチ画像">
+        <p>最新のバイク情報やレビュー記事を掲載しています。</p>
+        <a href="#">詳しく見る</a>
       </div>
-    </section>
-    <section id="works">
-      <div class="container">
-        <h2>My Works</h2>
-        <ul>
-          <li><a href="#">Webアプリケーション1</a></li>
-          <li><a href="#">Webアプリケーション2</a></li>
-          <li><a href="#">Webアプリケーション3</a></li>
-        </ul>
+      <div class="channel-item">
+        <h2 id="outdoor-channel">外遊びチャンネル</h2>
+        <img src="images/outdoor-channel.jpg" alt="外遊びチャンネルのアイキャッチ画像">
+        <p>磯遊び、キャンプ、ハイキングなどのアウトドア情報を掲載しています。</p>
+        <a href="#">詳しく見る</a>
       </div>
-    </section>
-    <section id="contact">
-      <div class="container">
-        <h2>Contact Me</h2>
-        <form action="#">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required>
-          </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div>
-            <label for="message">Message</label>
-            <textarea id="message" name="message" rows="5" required></textarea>
-          </div>
-          <div>
-            <button type="submit">Send</button>
-          </div>
-        </form>
-      </div>
-    </section>
-  </main>
-</body>
-</html>
+      <div class="channel-item">
+        <h2 id="diy-channel">モノづくりチャンネル</h2>
+        <img src="images/diy-channel.jpg" alt="モノづくりチャンネルのアイキャッチ画像">
+        <p>ガジェットづくり、プリント基板づくりなどの自作製品を紹介しています。</p>
+        <a href="#">詳しく見る</a>
+      </div
