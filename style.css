@@ -75,6 +75,15 @@ header {
   transform: translateX(100%);
 }
 
+
+.slider-wrapper {
+	width: 300%;
+	position: relative;
+	left: 0;
+	will-change: transform;
+	animation: slider 10s infinite;
+}
+
 @keyframes slide {
   0% {
     transform: translateX(0%);
