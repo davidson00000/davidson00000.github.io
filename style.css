@@ -52,7 +52,7 @@ header {
 .main-visual {
   padding-top: 80px;
   padding-left: 50px;
-  height: 500px;
+  height: auto;
   overflow: hidden;
   position: relative;
   background-image: url(images/news.jpg);
