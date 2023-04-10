@@ -56,18 +56,23 @@ header {
 }
 
 .slider {
-  height: 100%;
-  width: 400%;
-  display: flex;
-  animation: slide 12s infinite;
+  width: 100%;
+  overflow: hidden;
 }
 
 .slider img {
-  width: 25%;
-  height: 100%;
-  object-fit: cover;
-  animation-name: fade;
-  animation-duration: 1s;
+  display: block;
+  max-width: 100%;
+  height: auto;
+  float: left;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  transition: transform 1s ease-out;
+}
+
+.slider img:not(:first-child) {
+  transform: translateX(100%);
 }
 
 @keyframes slide {
