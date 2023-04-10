@@ -66,6 +66,8 @@ header {
   width: 25%;
   height: 100%;
   object-fit: cover;
+  animation-name: fade;
+  animation-duration: 1s;
 }
 
 @keyframes slide {
