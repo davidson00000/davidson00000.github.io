@@ -189,13 +189,7 @@ header {
   /* メインビジュアル */
   .main-visual {
   height: 200px;
-  position: relative;
-  }
-  
-  .main-visual img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  position: bottom;
   }
   
   /* チャンネル紹介 */
