@@ -137,4 +137,16 @@ footer a:hover {
   color: #333;
 }
 
-<h3 class="article-title">初心者に最適な250ccスーパースポーツバイク</h3>
+.article-title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.article-content {
+  font-size: 18px;
+  line-height: 1.5;
+  color: #666;
+  margin-bottom: 40px;
+}
