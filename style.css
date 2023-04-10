@@ -51,6 +51,7 @@ header {
 /* メインビジュアル */
 .main-visual {
   padding-top: 80px; /* 追加 */
+  padding-left:50px
   height: 500px;
   overflow: hidden;
   position: relative;
