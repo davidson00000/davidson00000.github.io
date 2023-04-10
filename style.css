@@ -50,8 +50,8 @@ header {
 
 /* メインビジュアル */
 .main-visual {
-  padding-top: 80px; /* 追加 */
-  padding-left:50px; /* 追加 */
+  padding-top: 80px;
+  padding-left: 50px;
   height: 500px;
   overflow: hidden;
   position: relative;
@@ -76,6 +76,7 @@ header {
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  text-align: center;
 }
 
 .channel-item h2 {
@@ -85,15 +86,52 @@ header {
   margin-bottom: 20px;
 }
 
-.news-topic {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
+.channel-item img {
+  height: 250px;
+  object-fit: cover;
   margin-bottom: 20px;
 }
 
-.news {
+.channel-item p {
   font-size: 16px;
   color: #666;
   margin-bottom: 20px;
+}
+
+.channel-item a {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: #333;
+  color: #fff;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.channel-item a:hover {
+  background-color: #666;
+}
+
+/* フッター */
+footer {
+  padding: 20px 50px;
+  background-color: #f7f7f7;
+  text-align: center;
+  font-size: 14px;
+  color: #666;
+  margin-top: 50px;
+}
+
+footer p {
+  margin-bottom: 10px;
+}
+
+footer a {
+  color: #666;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+footer a:hover {
+  color: #333;
 }
