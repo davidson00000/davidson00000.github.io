@@ -188,8 +188,7 @@ header {
   
   /* メインビジュアル */
   .main-visual {
-  height: 500px;
-  overflow: hidden;
+  height: 200px;
   position: relative;
   }
   
