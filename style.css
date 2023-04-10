@@ -50,7 +50,8 @@ header {
 
 /* メインビジュアル */
 .main-visual {
-  height: auto;
+  padding-top: 80px; /* 追加 */
+  height: 500px;
   overflow: hidden;
   position: relative;
   background-image: url(images/news.jpg);
