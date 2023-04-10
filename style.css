@@ -1,12 +1,12 @@
 /* リセットCSS */
-* {
+
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-/* ヘッダー */
-header {
+  }
+  /* ヘッダー */
+  header {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -16,185 +16,177 @@ header {
   position: fixed;
   width: 100%;
   z-index: 9999;
-}
-
-.logo {
+  }
+  
+  .logo {
   font-size: 28px;
   font-weight: bold;
   color: #333;
-}
-
-.main-nav {
+  }
+  
+  .main-nav {
   display: flex;
-}
-
-.main-nav li {
+  }
+  
+  .main-nav li {
   margin-left: 30px;
-}
-
-.main-nav li:first-child {
+  }
+  
+  .main-nav li:first-child {
   margin-left: 0;
-}
-
-.main-nav a {
+  }
+  
+  .main-nav a {
   font-size: 18px;
   font-weight: bold;
   color: #666;
   text-decoration: none;
   transition: all 0.3s ease;
-}
-
-.main-nav a:hover {
+  }
+  
+  .main-nav a:hover {
   color: #333;
-}
-
-/* メインビジュアル */
-/* メインビジュアル */
-.main-visual {
+  }
+  
+  /* メインビジュアル */
+  .main-visual {
   height: 500px;
   overflow: hidden;
   position: relative;
-}
-
-.slider{
-  width: 70vw;
-  margin: 0 auto;
+  }
+  
+  .slider {
+  width: 100%;
   overflow: hidden;
-  display: flex;
-  flex-flow: row nowrap;
-  justify-content: flex-start;
-  align-items: center;
-}
-
-.slider__content{
-  min-width: 100%;
-  animation: sliderAnime 6s ease-in-out infinite;
-}
-
-.slider__img{
-  max-width: 400%;
-  min-width: 100%;
-}
-
-@keyframes slider {
+  }
+  
+  .slider img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  float: left;
+  clear: both;
+  margin: 0;
+  padding: 0;
+  transition: transform 1s ease-out;
+  }
+  
+  .slider img:not(:first-child) {
+  transform: translateX(100%);
+  transition-delay: 4s;
+  }
+  
+  .slider-wrapper {
+  width: 300%;
+  position: relative;
+  left: 0;
+  will-change: transform;
+  animation: slide 2s infinite;
+  }
+  
+  @keyframes slide {
   0% {
-    transform: translateX(0);
-  }
-  8% {
-    transform: translateX(0);
-  }
-  10% {
-    transform: translateX(-100%);
-  }
-  18% {
-    transform: translateX(-100%);
+  transform: translateX(0%);
   }
   20% {
-    transform: translateX(-200%);
+  transform: translateX(0%);
   }
-  28% {
-    transform: translateX(-200%);
+  25% {
+  transform: translateX(-100%);
   }
-  30% {
-    transform: translateX(-300%);
-  }
-  38% {
-    transform: translateX(-300%);
-  }
-  40% {
-    transform: translateX(-200%);
-  }
-  48% {
-    transform: translateX(-200%);
+  45% {
+  transform: translateX(-100%);
   }
   50% {
-    transform: translateX(-100%);
+  transform: translateX(-200%);
   }
-  58% {
-    transform: translateX(-100%);
+  70% {
+  transform: translateX(-200%);
   }
-  60% {
-    transform: translateX(0);
+  75% {
+  transform: translateX(-300%);
+  }
+  95% {
+  transform: translateX(-300%);
   }
   100% {
-    transform: translateX(0);
+  transform: translateX(0%);
   }
-}
-
-
-/* チャンネル紹介 */
-.channel {
+  }
+  
+  /* チャンネル紹介 */
+  .channel {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   padding: 50px;
   background-color: #f7f7f7;
-}
-
-.channel-item {
+  }
+  
+  .channel-item {
   width: 30%;
   margin-bottom: 50px;
   padding: 20px;
   border-radius: 5px;
   background-color: #fff;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-}
-
-.channel-item h2 {
+  }
+  
+  .channel-item h2 {
   font-size: 24px;
   font-weight: bold;
   color: #333;
   margin-bottom: 20px;
-}
-
-.channel-item img {
+  }
+  
+  .channel-item img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   margin-bottom: 20px;
-}
-
-.channel-item p {
+  }
+  
+  .channel-item p {
   font-size: 16px;
   color: #666;
   margin-bottom: 20px;
-}
-
-.channel-item a {
-  display: inline-block;
-padding: 10px 20px;
-border-radius: 5px;
-background-color: #333;
-color: #fff;
-text-decoration: none;
-transition: all 0.3s ease;
-}
-
-.channel-item a:hover {
-background-color: #666;
-}
-
-/* フッター */
-footer {
-padding: 20px 50px;
-background-color: #f7f7f7;
-text-align: center;
-font-size: 14px;
-color: #666;
-margin-top: 50px;
-}
-
-footer p {
-margin-bottom: 10px;
-}
-
-footer a {
-color: #666;
-text-decoration: none;
-transition: all 0.3s ease;
-}
-
-footer a:hover {
-color: #333;
-}
- 
+  }
+  
+  .channel-item a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .channel-item a:hover {
+    background-color: #666;
+  }
+  
+  /* フッター */
+  footer {
+    padding: 20px 50px;
+    background-color: #f7f7f7;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+    margin-top: 50px;
+  }
+  
+  footer p {
+    margin-bottom: 10px;
+  }
+  
+  footer a {
+    color: #666;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: #333;
+  }
+  
