@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2, h3 {
+    color: #333;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.logo {
+    width: 50px; /* ロゴのサイズに応じて調整してください */
+    height: auto;
+    margin-right: 1rem;
+}
+
+header h1 {
+    color: #00ff00;
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.background-logo {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px; /* ロゴのサイズに応じて調整 */
+    height: auto;
+    background-image: url('./images/logo.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain; /* 画像が中央に収まるように調整 */
+    opacity: 0.1; /* 透明度を調整 (0.1 = 10%の不透明度) */
+    z-index: -1;
+    filter: hue-rotate(90deg) brightness(0.8) contrast(1.2);
+    animation: glitch 5s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        opacity: 0.1;
+        transform: translateX(0);
+    }
+    20% {
+        opacity: 0.15;
+        transform: translateX(-5px);
+    }
+    40% {
+        opacity: 0.1;
+        transform: translateX(5px);
+    }
+    60% {
+        opacity: 0.15;
+        transform: translateX(-5px);
+    }
+    80% {
+        opacity: 0.1;
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 0.1;
+        transform: translateX(0);
+    }
+}
+
+.content-wrapper {
+    position: relative;
+    z-index: 1;
+    min-height: 100vh; /* コンテンツの高さを背景ロゴと合わせる */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
