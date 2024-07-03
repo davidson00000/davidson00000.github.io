@@ -3,71 +3,139 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name - Product Designer and Developer</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script>
+    <title>CyberNinja - Ethical Hacker & Security Researcher</title>
+    <style>
+        body {
+            background-color: #0c0c0c;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #000000;
+            padding: 1rem 0;
+            border-bottom: #00ff00 3px solid;
+        }
+        header h1 {
+            color: #00ff00;
+            margin: 0;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #00ff00;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border: 1px solid #00ff00;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #00ff00;
+            color: #000000;
+        }
+        .glitch {
+            animation: glitch 1s linear infinite;
+        }
+        @keyframes glitch {
+            2%, 64% {
+                transform: translate(2px,0) skew(0deg);
+            }
+            4%, 60% {
+                transform: translate(-2px,0) skew(0deg);
+            }
+            62% {
+                transform: translate(0,0) skew(5deg); 
+            }
+        }
+        main {
+            padding: 2rem 0;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            border-bottom: 1px solid #00ff00;
+            padding-bottom: 0.5rem;
+        }
+        pre {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            border-left: 3px solid #00ff00;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #000000;
+            border-top: #00ff00 3px solid;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <nav>
-            <div class="logo">YourLogo</div>
-            <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#works">Works</a></li>
-                <li><a href="#blog">Blog</a></li>
-            </ul>
-        </nav>
+        <div class="container">
+            <h1 class="glitch">CyberNinja</h1>
+            <nav>
+                <a href="#about">[About]</a>
+                <a href="#skills">[Skills]</a>
+                <a href="#projects">[Projects]</a>
+                <a href="#contact">[Contact]</a>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <section id="hero">
-            <div class="hero-content">
-                <h1>Your Name</h1>
-                <p>Product Designer and Developer based in Your Location</p>
-                <a href="#contact" class="cta-button">Contact Me</a>
-            </div>
-            <div class="hero-image">
-                <!-- Add your photo here -->
-            </div>
+    <main class="container">
+        <section id="about">
+            <h2>// About Me</h2>
+            <p>Greetings, netizen. I am CyberNinja, an ethical hacker and security researcher. My mission: to expose vulnerabilities and strengthen digital fortresses.</p>
         </section>
 
-        <section id="services">
-            <h2>Services</h2>
-            <div class="service-cards">
-                <div class="card">
-                    <i class="fas fa-paint-brush"></i>
-                    <h3>Product Design</h3>
-                    <p>Description of your product design services</p>
-                </div>
-                <div class="card">
-                    <i class="fas fa-code"></i>
-                    <h3>Development</h3>
-                    <p>Description of your development services</p>
-                </div>
-                <!-- Add more service cards as needed -->
-            </div>
+        <section id="skills">
+            <h2>// Skill Set</h2>
+            <pre>
+┌──[Skills]
+├── Penetration Testing
+├── Malware Analysis
+├── Network Security
+├── Cryptography
+└── Social Engineering
+            </pre>
         </section>
 
-        <section id="works">
-            <h2>Selected Works</h2>
-            <div class="work-grid">
-                <!-- Add your project showcases here -->
-            </div>
+        <section id="projects">
+            <h2>// Notable Exploits</h2>
+            <ul>
+                <li>Operation DarkWeb Cleanup</li>
+                <li>Project Firewall Breach</li>
+                <li>Crypto-Locker Neutralization</li>
+            </ul>
         </section>
 
         <section id="contact">
-            <h2>Get in Touch</h2>
-            <form>
-                <!-- Add your contact form fields here -->
-            </form>
+            <h2>// Encrypted Channel</h2>
+            <p>To establish secure communication, use PGP key:</p>
+            <pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+mQINBGAbc3YBEACv8...
+-----END PGP PUBLIC KEY BLOCK-----</pre>
         </section>
     </main>
 
     <footer>
-        <div class="social-icons">
-            <!-- Add your social media icons and links here -->
+        <div class="container">
+            <p>&copy; 2024 CyberNinja | All rights reversed</p>
         </div>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
     </footer>
 </body>
 </html>
