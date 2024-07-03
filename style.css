@@ -81,8 +81,37 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 300px auto; /* ロゴのサイズに応じて調整 */
-    opacity: 0.8; /* 透明度を調整 (0.1 = 10%の不透明度) */
+    opacity: 1; /* 透明度を調整 (0.1 = 10%の不透明度) */
     z-index: -1;
+    filter: hue-rotate(90deg) brightness(0.8) contrast(1.2);
+    animation: glitch 5s infinite;
+}
+
+@keyframes glitch {
+    0% {
+        opacity: 0.1;
+        transform: translateX(0);
+    }
+    20% {
+        opacity: 0.15;
+        transform: translateX(-5px);
+    }
+    40% {
+        opacity: 0.1;
+        transform: translateX(5px);
+    }
+    60% {
+        opacity: 0.15;
+        transform: translateX(-5px);
+    }
+    80% {
+        opacity: 0.1;
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 0.1;
+        transform: translateX(0);
+    }
 }
 
 .content-wrapper {
