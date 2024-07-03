@@ -1,120 +1,155 @@
-cssCopybody {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CyberNinja - Ethical Hacker & Security Researcher</title>
+    <style>
+        body {
+            background-color: #0c0c0c;
+            color: #00ff00;
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #000000;
+            padding: 1rem 0;
+            border-bottom: #00ff00 3px solid;
+        }
+        header h1 {
+            color: #00ff00;
+            margin: 0;
+            text-align: center;
+            font-size: 2.5rem;
+        }
+        nav {
+            text-align: center;
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #00ff00;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+            border: 1px solid #00ff00;
+            transition: all 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #00ff00;
+            color: #000000;
+        }
+        .glitch {
+            animation: glitch 1s linear infinite;
+        }
+        @keyframes glitch {
+            2%, 64% {
+                transform: translate(2px,0) skew(0deg);
+            }
+            4%, 60% {
+                transform: translate(-2px,0) skew(0deg);
+            }
+            62% {
+                transform: translate(0,0) skew(5deg); 
+            }
+        }
+        main {
+            padding: 2rem 0;
+        }
+        section {
+            margin-bottom: 2rem;
+        }
+        h2 {
+            border-bottom: 1px solid #00ff00;
+            padding-bottom: 0.5rem;
+        }
+        pre {
+            background-color: #1a1a1a;
+            padding: 1rem;
+            border-left: 3px solid #00ff00;
+            overflow-x: auto;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem 0;
+            background: #000000;
+            border-top: #00ff00 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <div class="background-logo"></div>
+    <div class="content-wrapper">
+        <header>
+            <div class="container">
+                <div class="logo-container">
+                    <img src="./images/logo.png" alt="CyberNinja Logo" class="logo">
+                    <h1 class="glitch">CyberNinja</h1>
+                </div>
+                <nav>
+                    <a href="#about">[About]</a>
+                    <a href="#skills">[Skills]</a>
+                    <a href="#projects">[Projects]</a>
+                    <a href="#contact">[Contact]</a>
+                </nav>
+            </div>
+        </header>
 
-header {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
+        <main class="container">
+            <section id="about">
+                <h2>// About Me</h2>
+                <p>Greetings, netizen. I am CyberNinja, an ethical hacker and security researcher. My mission: to expose vulnerabilities and strengthen digital fortresses.</p>
+            </section>
 
-nav ul {
-    padding: 0;
-}
+            <section id="skills">
+                <h2>// Skill Set</h2>
+                <pre>
+┌──[Skills]
+├── Penetration Testing
+├── Malware Analysis
+├── Network Security
+├── Cryptography
+└── Social Engineering
+                </pre>
+            </section>
 
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
+            <section id="projects">
+                <h2>// Notable Exploits</h2>
+                <ul>
+                    <li>Operation DarkWeb Cleanup</li>
+                    <li>Project Firewall Breach</li>
+                    <li>Crypto-Locker Neutralization</li>
+                </ul>
+            </section>
+            <section id="diary">
+                <h2>// Diary</h2>
+                <p>
+                    2024.7.3 Wed
+                </p>
+                This is the content of diary.
+                </ul>
+            </section>
 
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-}
+            <section id="contact">
+                <h2>// Encrypted Channel</h2>
+                <p>To establish secure communication, use PGP key:</p>
+                <pre>-----BEGIN PGP PUBLIC KEY BLOCK-----
+mQINBGAbc3YBEACv8...
+-----END PGP PUBLIC KEY BLOCK-----</pre>
+            </section>
+        </main>
 
-main {
-    padding: 20px;
-}
-
-h1, h2, h3 {
-    color: #333;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-}
-
-.logo-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-.logo {
-    width: 50px; /* ロゴのサイズに応じて調整してください */
-    height: auto;
-    margin-right: 1rem;
-}
-
-header h1 {
-    color: #00ff00;
-    margin: 0;
-    font-size: 2.5rem;
-}
-
-body {
-    position: relative;
-    min-height: 100vh;
-    margin: 0;
-    padding: 0;
-}
-
-.background-logo {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100vh;
-    background-image: url('./images/logo.png');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 300px auto; /* ロゴのサイズに応じて調整 */
-    opacity: 1; /* 透明度を調整 (0.1 = 10%の不透明度) */
-    z-index: -1;
-    filter: hue-rotate(90deg) brightness(0.8) contrast(1.2);
-    animation: glitch 5s infinite;
-}
-
-@keyframes glitch {
-    0% {
-        opacity: 0.1;
-        transform: translateX(0);
-    }
-    20% {
-        opacity: 0.15;
-        transform: translateX(-5px);
-    }
-    40% {
-        opacity: 0.1;
-        transform: translateX(5px);
-    }
-    60% {
-        opacity: 0.15;
-        transform: translateX(-5px);
-    }
-    80% {
-        opacity: 0.1;
-        transform: translateX(5px);
-    }
-    100% {
-        opacity: 0.1;
-        transform: translateX(0);
-    }
-}
-
-.content-wrapper {
-    position: relative;
-    z-index: 1;
-}
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 CyberNinja | All rights reversed</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
