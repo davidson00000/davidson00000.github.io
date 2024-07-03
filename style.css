@@ -81,7 +81,7 @@ body {
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 300px auto; /* ロゴのサイズに応じて調整 */
-    opacity: 0.1; /* 透明度を調整 (0.1 = 10%の不透明度) */
+    opacity: 0.8; /* 透明度を調整 (0.1 = 10%の不透明度) */
     z-index: -1;
 }
 
